@@ -33,6 +33,6 @@ app.get('/event-stream', (req, res) => {
     sseDemo(req, res);
 });
 
-app.listen((server_port, server_ip_address) => {
-    console.log(`Your Server is running at: ${server_ip_address}:${server_port}`);
-});
+app.listen(server_port, server_ip_address, () => {
+    console.log(`Server running at http://${server_ip_address}:${server_port}/`);
+  });
