@@ -20,5 +20,5 @@ RUN npm install
 COPY . .
 USER node
 
-EXPOSE 5555
+EXPOSE 5551
 CMD [ "node", "app.js" ]
